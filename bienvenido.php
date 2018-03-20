@@ -15,7 +15,7 @@ if($login>0){
 
 }
 else{
-  header("location:autorizacion.html");
+  header("location:nologin.php");
   die();
 }
 ?>
