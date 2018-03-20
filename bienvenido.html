@@ -1,0 +1,21 @@
+<?php
+session_start();
+$varsesion = $_SESSION['usuario'];
+
+if($varsesion == null || $varsesion = ''){
+  echo 'Usted no tiene autorizacion';
+  die();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bienvenido</title>
+  </head>
+  <body>
+    <h1>Bienvenido: <?php echo $_SESSION['usuario'] ?></h1>
+    <a href="cerrar_sesion.php">Cerrar Sesión</a>
+  </body>
+</html>
